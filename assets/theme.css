@@ -1,0 +1,139 @@
+:root {
+  --vs-warn: 255, 186, 0;
+  --vs-danger: 255, 71, 87;
+  --vs-success: 70, 201, 58;
+  --vs-dark: 30, 30, 30;
+  --vs-light: 244, 247, 248;
+  --vs-color: 17, 18, 20;
+  --vs-messenger: 0, 132, 255;
+  --vs-background: 255, 255, 255;
+  --vs-text: 44, 62, 80;
+  --vs-gray-1: 249, 252, 253;
+  --vs-gray-2: 244, 247, 248;
+  --vs-gray-3: 240, 243, 244;
+  --vs-gray-4: 230, 233, 234;
+}
+:root {
+  --vs-primary: 188, 149, 245;
+  --vs-theme-bg: #fff;
+  --vs-theme-color: #2c3e50;
+  --vs-theme-layout: #f1f1f1;
+  --vs-theme-bg2: #eef2f5;
+  --vs-theme-code: #3f3d56;
+  --vs-theme-code2: #363449;
+}
+.dark {
+  --vs-theme-bg: #383b58;
+  --vs-theme-color: #fff;
+  --vs-theme-layout: #282a35;
+  --vs-theme-bg2: #141417;
+  --vs-theme-code: #141417;
+  --vs-theme-code2: #161619;
+}
+
+.dark {
+  --vs-background: 30, 32, 35;
+  --vs-text: 255, 255, 255;
+  --vs-gray-1: 24, 25, 28;
+  --vs-gray-2: 20, 20, 23;
+  --vs-gray-3: 15, 16, 19;
+  --vs-gray-4: 10, 11, 14;
+  --vs-shadow-opacity: 0.3;
+  --vs-dark: 0, 0, 0;
+  --vs-background-opacity: 0.6;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--vs-theme-layout);
+  color: var(--vs-theme-color) !important;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+.b1,
+.dark .dark\:b1 {
+  background: var(--vs-theme-bg);
+}
+.b2,
+.dark .dark\:b2 {
+  background: var(--vs-theme-layout);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  display: block;
+  background: var(--vs-theme-layout);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vs-theme-color);
+  border-radius: 5px;
+}
+
+::-moz-selection {
+  background: rgba(37, 100, 255, 0.15);
+}
+
+::selection {
+  background: rgba(37, 100, 255, 0.15);
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+.anm-up {
+  animation: anm 22s infinite reverse;
+}
+.anm-down {
+  animation: anm 25s infinite reverse;
+}
+@keyframes anm {
+  0% {
+    transform: translate(0);
+  }
+
+  30% {
+    transform: translateY(-10px);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+
+  70% {
+    transform: translateY(-15px);
+  }
+
+  to {
+    transform: translate(0);
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}
+
+/* vuesax */
+.vs-dialog__content {
+  height: calc(100vh - 8rem) !important;
+  overflow-y: auto;
+}
+.vs-select > input,
+.vs-input-content > input {
+  padding: 5px 7px !important;
+}
+* {
+  transition-property: background-color;
+  transition-duration: 0s;
+}

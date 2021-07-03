@@ -1,0 +1,6 @@
+.flex-center {
+  @apply flex items-center;
+}
+.d-card {
+  @apply rounded-2xl transition-shadow shadow-card hover:shadow-none;
+}

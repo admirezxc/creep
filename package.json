@@ -1,0 +1,27 @@
+{
+  "name": "creep",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@better-scroll/core": "^2.3.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/vue-fontawesome": "^2.0.2",
+    "@nuxtjs/color-mode": "^2.0.10",
+    "core-js": "^3.9.1",
+    "echarts": "^5.1.2",
+    "nuxt": "^2.15.3",
+    "vuesax": "^4.0.1-alpha.25",
+    "vuewordcloud": "^18.7.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.0.1",
+    "postcss": "^8.2.8"
+  }
+}
